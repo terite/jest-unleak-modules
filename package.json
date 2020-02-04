@@ -7,7 +7,7 @@
     "node": ">= 12"
   },
   "scripts": {
-    "test": "jest --detectLeaks --runInBand"
+    "test": "node --expose-gc ./node_modules/.bin/jest --detectLeaks --runInBand --no-cache --logHeapUsage"
   },
   "author": "David Stensland <jest-unleak-modules@terite.com>",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "graceful-fs": "^4.2.3",
     "jest": "^25.1.0",
     "jest-environment-jsdom-sixteen": "^1.0.0",
+    "mathjs": "^6.6.0",
     "shimmer": "^1.2.1",
     "weak-napi": "^1.0.3"
   }
