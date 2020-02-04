@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Un-monkey-patch modules that cause jest tests to leak memory.",
   "main": "index.js",
+  "engines": {
+    "node": ">= 12"
+  },
   "scripts": {
     "test": "jest --detectLeaks --runInBand"
   },
