@@ -1,0 +1,22 @@
+{
+  "name": "jest-unleak-modules",
+  "version": "1.0.0",
+  "description": "Un-monkey-patch modules that cause jest tests to leak memory.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --detectLeaks --runInBand"
+  },
+  "author": "David Stensland <jest-unleak-modules@terite.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "agent-base4": "npm:agent-base@^4.0.0",
+    "agent-base5": "npm:agent-base@^5.0.0",
+    "agent-base6": "npm:agent-base@^6.0.0",
+    "async-listener": "^0.6.10",
+    "continuation-local-storage": "^3.2.1",
+    "graceful-fs": "^4.2.3",
+    "jest": "^25.1.0",
+    "shimmer": "^1.2.1",
+    "weak-napi": "^1.0.3"
+  }
+}
