@@ -1,16 +1,14 @@
 require('../../index').fixShimmer();
 
 test('shimmer', () => {
-    const events = require('events');
+    const os = require('os');
     const shimmer = require('shimmer');
 
-    let called = false;
-    shimmer.wrap(events, 'once', (original) => {
+    shimmer.wrap(os, 'uptime', (original) => {
         return () => {
-            called = true;
+            return 9001
         };
     });
 
-    events.once('foo');
-    expect(called).toBe(true);
+    expect(os.uptime()).toBe(9001);
 });
