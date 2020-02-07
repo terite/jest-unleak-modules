@@ -7,7 +7,8 @@
     "node": ">= 12"
   },
   "scripts": {
-    "test": "node --expose-gc ./node_modules/.bin/jest --detectLeaks --runInBand --no-cache --logHeapUsage"
+    "test": "node --allow-natives-syntax --track-retaining-path --harmony-weak-refs --expose-gc ./node_modules/.bin/jest --detectLeaks --runInBand --no-cache --logHeapUsage",
+    "prettier-all": "prettier --write *.js tests/**/* __mocks__/**/*"
   },
   "author": "David Stensland <jest-unleak-modules@terite.com>",
   "license": "MIT",
@@ -20,7 +21,9 @@
     "graceful-fs": "^4.2.3",
     "jest": "^25.1.0",
     "jest-environment-jsdom-sixteen": "^1.0.0",
+    "jest-environment-jsdomv24": "npm:jest-environment-jsdom@24.9.0",
     "mathjs": "^6.6.0",
+    "prettier": "^1.19.1",
     "shimmer": "^1.2.1",
     "weak-napi": "^1.0.3"
   }

@@ -1,6 +1,5 @@
-require('../../index').fixGracefulFs();
+require("../../index").fixGracefulFs();
 
-test('graceful-fs', () => {
-    expect(require('graceful-fs')).not.toBeUndefined();
+test("graceful-fs", () => {
+  expect(require("graceful-fs")).not.toBeUndefined();
 });
-

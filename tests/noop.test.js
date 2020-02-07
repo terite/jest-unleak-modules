@@ -1,4 +1,3 @@
-
-test('noop', () => {
-    expect(true).toBe(true);
+test("noop", () => {
+  expect(true).toBe(true);
 });

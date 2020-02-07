@@ -2,6 +2,6 @@
  * @jest-environment jest-environment-jsdom-sixteen
  */
 
-test('noop', () => {
-    expect(true).toBe(true);
+test("noop", () => {
+  expect(true).toBe(true);
 });

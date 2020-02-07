@@ -1,7 +1,7 @@
-global.agent_base_module = 'agent-base4';
+global.agent_base_module = "agent-base4";
 
-require('../../index').fixAgentBase();
+require("../../index").fixAgentBase();
 
-test('agent-base v4', () => {
-    expect(require('agent-base')).not.toBeUndefined();
+test("agent-base v4", () => {
+  expect(require("agent-base")).not.toBeUndefined();
 });
