@@ -21,7 +21,7 @@
     "graceful-fs": "^4.2.3",
     "jest": "^25.1.0",
     "jest-environment-jsdom-sixteen": "^1.0.0",
-    "jest-environment-jsdomv24": "npm:jest-environment-jsdom@24.9.0",
+    "jest-environment-jsdom-v24": "npm:jest-environment-jsdom@24.9.0",
     "mathjs": "^6.6.0",
     "prettier": "^1.19.1",
     "shimmer": "^1.2.1",
